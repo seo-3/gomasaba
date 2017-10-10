@@ -1,0 +1,128 @@
+[
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.OperatedMessages.NumberOfMessagesSent"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "NumberOfMessagesSent",
+      "stats": "Sum",
+      "unit": "Count"
+    }
+  },
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.OperatedMessages.NumberOfMessagesReceived"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "NumberOfMessagesReceived",
+      "stats": "Sum",
+      "unit": "Count"
+    }
+  },
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.OperatedMessages.NumberOfMessagesDeleted"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "NumberOfMessagesDeleted",
+      "stats": "Sum",
+      "unit": "Count"
+    }
+  },
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.OperatedMessages.ApproximateNumberOfMessagesDelayed"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "ApproximateNumberOfMessagesDelayed",
+      "stats": "Sum",
+      "unit": "Count"
+    }
+  },
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.VisibleMessaages.ApproximateNumberOfMessagesNotVisible"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "ApproximateNumberOfMessagesNotVisible",
+      "stats": "Sum",
+      "unit": "Count"
+    }
+  },
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.VisibleMessaages.ApproximateNumberOfMessagesVisible"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "ApproximateNumberOfMessagesVisible",
+      "stats": "Sum",
+      "unit": "Count"
+    }
+  },
+  {
+    "mackerel": {
+      "service_name": "hoge",
+      "metric_name": "hoge-queue.MessagAverageSize.SentMessageSize"
+    },
+    "cloudwatch": {
+      "namespace": "AWS/SQS",
+      "dimensions": [
+        {
+          "name": "QueueName",
+          "value": "hoge-queue"
+        }
+      ],
+      "metric_name": "SentMessageSize",
+      "stats": "Average",
+      "unit": "Bytes"
+    }
+  }
+]
